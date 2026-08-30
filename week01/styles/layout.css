@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+header,footer{
+    grid-column: 1 / 3;
+}
+
+main{
+    grid-column: 1;
+}
+
+aside{
+    grid-column: 2;
+}
