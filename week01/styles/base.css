@@ -1,0 +1,156 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto" ,Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1e557e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#course-title {
+    display: block; /* Mandatory block assignment constraint */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex; /* Employ CSS Flex */
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 4px 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Main Screen Layout */
+main {
+    max-width: 1024px;
+    margin: 30px auto;
+    display: grid; /* Layout main column cards using CSS Grid */
+    grid-template-columns: 1.8fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+main h1 {
+    grid-column: 1 / -1; /* Heading spans across both layout columns */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Card Styling Framework */
+.card {
+    border: 1px solid #1e557e;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.card h2 {
+    background-color: #1e557e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.15rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    clear: both; /* Prevents layout issues with the floated content above it */
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 25px 0 15px 0;
+}
+
+/* --- About Me Structural Layout Arrangements --- */
+
+/* Bio section: float image to the right side of the text */
+.card img[alt*="Profile"] {
+    width: 110px;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* Flag section: float image to the left side of the text */
+.card img[alt*="flag"] {
+    width: 120px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* Text Padding adjustments to contain inside the cards */
+.card p {
+    padding: 0 20px;
+}
+
+/* --- Web Dev Resources Column --- */
+.card ul {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card ul li::before {
+    content: "•";
+    color: #1e557e;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.card ul li a {
+    color: #0055cc;
+    text-decoration: underline;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #1e557e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
