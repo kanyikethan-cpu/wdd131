@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive album displaying various temples.">
+    <!-- Google Fonts Links (Using Montserrat and Open Sans as an example) -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Mobile-first Stylesheet links -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 600px)">
+    
+    <!-- Deferred JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <!-- Hamburger Button for mobile view -->
+        <button id="menuButton" aria-label="Toggle Menu"></button>
+        <nav id="navMenu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explore Temples</h2>
+        <div class="grid-container">
+            <!-- 9 Figure Elements -->
+            <figure>
+                <img src="images/temple1.jpg" alt="temple1">
+                <figcaption>Temple1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Temple2">
+                <figcaption>Temple2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.jpg" alt="Temple3">
+                <figcaption>Temple3</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.jpg" alt="Temple4">
+                <figcaption>Temple4</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.jpg" alt="Temple5">
+                <figcaption>Temple5</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.jpg" alt="Temple6">
+                <figcaption>Temple6</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.jpg" alt="Temple7">
+                <figcaption>Temple7</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.jpg" alt="Temple8">
+                <figcaption>Temple8</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.jpg" alt="Temple9" >
+                <figcaption>Temple9</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy 2026; <span id="currentYear"></span> | Kanyike Jonathan | WDD 131 Assignment</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

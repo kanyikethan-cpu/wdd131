@@ -1,0 +1,30 @@
+/* Desktop View Improvements */
+
+/* Hide Hamburger Menu icon on desktop */
+#menuButton {
+    display: none;
+}
+
+/* Reset Navigation to structural row row layout */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex !important; /* Force menu to show without JS open class */
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%;
+}
+
+nav a {
+    padding: 0.75rem 2rem;
+}
+
+/* Multicolumn Responsive CSS Grid with auto-fit and minmax */
+.grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
