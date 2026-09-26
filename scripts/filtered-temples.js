@@ -54,7 +54,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "images/temple5.jpeg"
+    "images/temple5.jpg"
   },
   {
     templeName: "Lima Perú",
@@ -86,14 +86,7 @@ const temples = [
     area: 12325,
     imageUrl: "images/temple9.jpg",
   },
-  {
-    templeName: "Draper Utah Temple",
-    location: "Draper, Utah, United States",
-    dedicated: "2009, March, 22",
-    area: 58300,
-    imageUrl: "images/temple1.jpg"
-	
-  },
+ 
 
  
 ];
